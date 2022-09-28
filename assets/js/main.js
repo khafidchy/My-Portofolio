@@ -9,7 +9,7 @@
 
   /**
    * Easy selector helper function
-   * Bagian ini harus tersedia
+   * untuk memilih selector css pada html
   */
   const select = (el, all = false) => {
     el = el.trim()
@@ -24,7 +24,8 @@
 
   /**
    * Easy event listener function
-   * bagian ini harus tersedia
+   * kurang lebih sama 
+   * 
   */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
@@ -175,6 +176,7 @@
 
   /**
    * Porfolio isotope and filter
+   * Untuk memfilter portofolio berdasarkan menu
   */
   window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
